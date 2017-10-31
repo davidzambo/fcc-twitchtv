@@ -3,33 +3,65 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Local Weather application</title>
+    <title>Twitch TV API application</title>
 
-    <link rel="shortcut icon" href="https://www.dcmf.hu/favicon.jpg" type="image/x-icon"/> 
+    <!-- FACEBOOK SHARING METATAGS -->
+    <meta property="og:url"                content="https://dcmf.hu/freecodecamp/twitchtv/" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="Twitch.tv API application" />
+    <meta property="og:description"        content="FreeCodeCamp's Twitch.tv api projectr" />
+    <meta property="og:image"              content="https://www.dcmf.hu/freecodecamp/twitchtv/images/twitch.png" />
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <script src="https://use.fontawesome.com/14c79cd15d.js"></script>
 
-    <!-- Weather icons -->
-    <link href="css/weather-icons.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="https://www.dcmf.hu/favicon.jpg" type="image/x-icon"/>
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Tether.io -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
-
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="css/animate.css">
   </head>
+<body>
+  <section class="continer-fluid">
+    <div class="row justify-content-center no-gutters">
+      <div class="col-md-6 col-sm-8 col-xs-10 bg-warning text-white" id="content">
+        <header class="row mt-2 no-gutters">
+          <div class="col-8">
+            <h1 class="m-2"><strong>Twitch streamers</strong></h1>
+          </div>
+          <div class="col-4">
+            <ul class="menu">
+              <li class="menu-item active" id="all">
+                <span class="menu-item-mark"><i class="fa fa-circle" aria-hidden="true"></i></span><span class="menu-item-label">all</span>
+              </li>
+              <li class="menu-item" id="online">
+                <span class="menu-item-mark"><i class="fa fa-circle" aria-hidden="true"></i></span><span class="menu-item-label">online</span>
+              </li>
+              <li class="menu-item" id="offline">
+                <span class="menu-item-mark"><i class="fa fa-circle" aria-hidden="true"></i></span><span class="menu-item-label">offline</span>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <div class="mb-2" id="results">
+          <div class="row twitch-user no-gutters">
+						<div class="col-12 h-75 p-5 text-dark text-center">
+              <i class="fa fa-4x fa-spin fa-circle-o-notch" aria-hidden="true"></i>
+              <div class="p-5">
+                <h4>Please wait while we are gathering user informations from twitch.tv server...</h4>
+              </div>
+						</div>
+					 </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

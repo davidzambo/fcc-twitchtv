@@ -1,0 +1,32 @@
+.twitch-user{
+  background-color: $white;
+	font-size: 0.8rem;
+	a,
+	a:hover,
+	a:active,
+	a:visited{
+		text-decoration: none;
+		color: $bs-primary;
+	}
+	img{
+		margin: 0.75rem;
+		max-width: 65%;
+		height: auto;
+		border-radius: 50%;
+	}
+	h4{
+    margin: 0.5rem 0.125rem 0 0.125rem;
+		padding: 0 0.5rem;
+    border-left: 0.35rem solid $bs-warning;
+	}
+  p{
+    color: $bs-dark;
+    margin: 0 0.125rem 0.5rem 0.125rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    border-left: 0.35rem solid $bs-warning;
+  }
+  .details{
+    margin: 0.5rem 0;
+  }
+	border-bottom: 1px solid $white;
+}

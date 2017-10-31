@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900');
+@import 'no-gutters';
+@import 'variables';
+@import 'menu';
+@import 'content';
+@import 'media-queries';
+@import 'font-awesome/font-awesome';
+
+html {
+	height: 100%;
+	font-family: $raleway;
+}
+
+body{
+	background-color: $bs-secondary;
+	position: relative;
+	min-height: 100%;
+	font-family: $raleway;
+}
+
+
+header{
+	background-color: $dark-grey;
+	color: $light-grey;
+	h1{
+		padding: 1rem 1.25rem;
+		font-weight: 300;
+		vertical-align: middle;
+		text-transform: capitalize;
+	}
+}
+
+section{
+	padding: 2rem 0.5rem;
+	position: relative;
+	min-height: 100%;
+}
+
+.show-borders {
+	*{
+		border: 1px solid black;
+	}
+}
